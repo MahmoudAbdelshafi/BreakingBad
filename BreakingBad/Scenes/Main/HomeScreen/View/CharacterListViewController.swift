@@ -127,12 +127,11 @@ extension CharacterListViewController {
     }
 }
 
-
 // MARK: - UIScrollView
 
 extension CharacterListViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        /// Ignore collectionview horizontal scrolling and table view scrolling
+        /// Ignore collectionview horizontal scrolling and tableview scrolling
         if scrollView != tableView && scrollView != collectionView {
             if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
                 viewModel.getCharacters()

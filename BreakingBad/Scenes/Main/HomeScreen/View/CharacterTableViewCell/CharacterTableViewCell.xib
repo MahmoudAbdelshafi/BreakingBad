@@ -30,6 +30,11 @@
                                     <constraint firstAttribute="width" constant="42" id="KVn-Ao-H5C"/>
                                     <constraint firstAttribute="height" constant="42" id="ScO-s0-8PS"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                                        <real key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WALTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wG-OP-0jn">
                                 <rect key="frame" x="82" y="27" width="158" height="20"/>

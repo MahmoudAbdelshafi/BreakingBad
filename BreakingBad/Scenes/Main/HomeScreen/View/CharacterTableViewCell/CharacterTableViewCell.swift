@@ -28,15 +28,5 @@ class CharacterTableViewCell: UITableViewCell {
     func configure(charachter: Character) {
         characterImg.kf.setImage(with: URL(string: charachter.img?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""))
         characterNameLbl.text = charachter.name?.uppercased()
-        setupUI()
-    }
-}
-
-//MARK:- Private Functions
-
-extension CharacterTableViewCell {
-    
-    private func setupUI() {
-        characterImg.layer.cornerRadius = characterImg.frame.height/2
     }
 }
